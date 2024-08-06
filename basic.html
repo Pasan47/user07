@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>SLT Full Stack Training</h1>
+    <br>
+    <h2>Welcome Buthsara</h2>
+    <br>
+    <div>        
+        <img src="Santorini.jpg" alt="Trulli" width="500" height="333">
+        <li>
+            <ul>SLT</ul>
+            <li>Dialog</li>
+        </li>
+        <ol>
+            <li>Coffee</li>
+            <li>Tea</li>
+            <li>Milk</li>
+        </ol>
+        <canvas id="myCanvas" width="200" height="100" style="border: 1px solid #000000;">
+            Your browser does not support the HTML canvase tag.
+        </canvas>
+        <table>
+            <tr>
+              <th>Company</th>
+              <th>Contact</th>
+              <th>Country</th>
+            </tr>
+            <tr>
+              <td>Alfreds Futterkiste</td>
+              <td>Maria Anders</td>
+              <td>Germany</td>
+            </tr>
+            <tr>
+              <td>Centro comercial Moctezuma</td>
+              <td>Francisco Chang</td>
+              <td>Mexico</td>
+            </tr>
+          </table>
+
+          <svg width="100" height="100">
+            <rect x="10" y="10" width="200" heigth="100" stroke="green" stroke-width="6" fill="yellow" />
+          </svg>
+
+          <svg width="400" height="120">
+            <circle cx="50" cy="50" r="40" stroke="green" stroke-width="4" fill="blue" />
+          </svg>
+
+          <svg width="400" height="120">
+            <rect x="50" y="20" rx="20" ry="20" width="200" heigth="100" 
+            style="fill: red; stroke: black; stroke-width: 5; opacity: 0.5;" />
+            Sorry, your browser does not support inline SVG.
+          </svg>
+
+          <svg width="320" height="130" >
+            <rect width="300" height="100" x="10" y="10" style="fill:rgb(0,0,255);stroke-width:3;stroke:red" />
+          </svg>
+    </div>
+    <div>
+        <table>
+            <tr>
+                <td>Emil</td>
+                <td>Tobias</td>
+                <td>Linus</td>
+              </tr>
+        </table>
+    </div>
+
+    <div>
+        <form action="/action_page.php">
+            <label for="fname">First name:</label>
+            <input type="text" id="fname" name="fname"><br><br>
+            <label for="lname">Last name:</label>
+            <input type="text" id="lname" name="lname"><br><br>
+            <input type="submit" value="Submit">
+          </form>
+    </div>
+
+    <h1>HTML Geolocation</h1>
+    <p>Click the button to get your coordinates.</p>
+    
+    <button onclick="getLocation()">Try It</button>
+    
+    <p id="demo"></p>
+
+    <script>
+        const x = document.getElementById("demo");
+        
+        function getLocation() {
+          if (navigator.geolocation) {
+            navigator.geolocation.getCurrentPosition(showPosition);
+          } else { 
+            x.innerHTML = "Geolocation is not supported by this browser.";
+          }
+        }
+        
+        function showPosition(position) {
+          x.innerHTML = "Latitude: " + position.coords.latitude + 
+          "<br>Longitude: " + position.coords.longitude;
+        }
+        </script>
+    <footer style="background-color: lightblue; text-align: center;">
+        <p>Author: Hege Refsnes
+            <br>
+            <a href="mailto:hege@example.com">hege@example.com</a>
+        </p>
+    </footer>
+</body>
+</html>

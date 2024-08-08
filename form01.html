@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<style>
+    .heading
+    {
+        background-color: rgb(153, 154, 223);
+        color: black;
+        text-align: center;
+        font-size: 48px;
+    }
+    .secondheading
+    {
+        background-color: black;
+        color: white;
+        text-align: center;
+        font-size: 24px;
+        padding: 10px;
+    }
+    .mainform
+    {
+        margin-top: 50px;
+        margin-bottom: 50px;
+        margin-left: 200px;
+        margin-right: 200px; 
+    }
+    .form
+    {
+        background-color: rgb(14, 61, 14);
+        color: white;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        padding-left: 100px;
+        padding-right: 100px;
+        font-size: 24px;
+    }
+</style>
+</head>
+<body>
+    <div class="mainform">
+        <div class="heading">DEVELOPERS SURVEY FORM</div>
+        <div class="secondheading">Thank you for taking the time to help us know the about world wide developers</div>
+        
+        <div>
+            <form class="form">
+                <label for="name">Name:   <input type="text" id="name" name="name" > </label><br>
+                <label for="email">Email: <input type="email" id="email" name="email"> </label><br>
+                <label for="age">Age:     <input type="text" id="age" name="age"> </label><br>
+                <label for="nationality">Nationality:
+                <select name="cars" id="cars">
+                    <option value="volvo">Indian</option>
+                    <option value="saab">Sri Lankan</option>
+                    <option value="opel">American</option>
+                  </select>
+                </label><br>
+                <label for="developer">Developer:
+                    <input type="radio" id="developer1" name="developer1" value="developer1">
+                    <label for="developer1">Frontend</label>
+                    <input type="radio" id="developer2" name="developer2" value="developer2">
+                    <label for="developer2">Backend</label>
+                    <input type="radio" id="developer3" name="developer3" value="developer3">
+                    <label for="developer3">FullStack</label>
+                </label><br>
+                <label for="qualification">Qualifications:
+                    <input type="checkbox" id="qualification1" name="qualification1" value="qualification1">
+                    <label for="qualification1">10+2</label>
+                    <input type="checkbox" id="qualification2" name="qualification2" value="qualification2">
+                    <label for="qualification2">Graduation</label>
+                    <input type="checkbox" id="qualification3" name="qualification3" value="qualification3">
+                    <label for="qualification3">Degree</label>
+                </label><br>
+                <label for="aboutYou">Describe About You: <input type="text" id="aboutYou" name="aboutYou"> </label><br>
+                <button>Submit</button>
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>
